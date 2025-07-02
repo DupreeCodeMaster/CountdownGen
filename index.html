@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Countdown Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Countdown Generator</h1>
+    <input id="title" placeholder="Titel des Countdowns" />
+    <input id="date" type="datetime-local" />
+    <button onclick="startCountdown()">Starten</button>
+
+    <h2 id="countdown-title"></h2>
+    <div id="countdown"></div>
+    <div id="message-container">
+      <div class="firework left"></div>
+      <div id="message"></div>
+      <div class="firework right"></div>
+    </div>
+    <canvas id="qr"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
